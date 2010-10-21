@@ -33,7 +33,7 @@ Exceptions
 
 Zeromqt uses C++ exceptions by default. You'll need to catch ZmqException
 objects in the normal way (which on Qt probably involves inheriting from
-QCoreAppliction and reimplementing notify()).
+QCoreApplication and reimplementing notify()).
 
 There is untested support in the code for replacing exceptions with Qt-style
 errorString() error handling instead - look for USE_EXCEPTIONS
