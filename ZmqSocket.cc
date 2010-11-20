@@ -1,5 +1,6 @@
 #include <zmq.h>
 #include <errno.h>
+#include <stdint.h>
 
 #include "ZmqSocket.h"
 #include "ZmqContext.h"
