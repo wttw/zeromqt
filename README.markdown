@@ -23,7 +23,7 @@ Usage
 To use Zeromqt in a Qt project, add this to the projects .pro file
 
     HEADERS += ZmqException.h ZmqMessage.h ZmqSocket.h ZmqContext.h
-    SOURCES += ZmqSocket.cc ZmqMessage.cc
+    SOURCES += ZmqSocket.cc ZmqContext.cc
     LIBS += -lzmq
 
 and copy the six Zmq* files into the project.
