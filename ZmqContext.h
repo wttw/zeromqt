@@ -10,7 +10,7 @@ public:
   ZmqContext(int iothreads, int defaultLinger);
   ~ZmqContext();
   static ZmqContext *instance(int iothreads=4, int defaultLinger = 0) {
-    if (!_self)
+    if (!self_)
         self_ = new ZmqContext(iothreads, defaultLinger);
     return self_;
   }
