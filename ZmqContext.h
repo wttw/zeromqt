@@ -11,7 +11,7 @@ public:
   ~ZmqContext();
   static ZmqContext *instance(int iothreads=4, int defaultLinger = 0) {
     if (!_self)
-        _self = new ZmqContext(iothreads, defaultLinger);
+        self_ = new ZmqContext(iothreads, defaultLinger);
     return self_;
   }
 
