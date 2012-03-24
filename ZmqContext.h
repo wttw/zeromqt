@@ -10,7 +10,9 @@ public:
   ZmqContext(int iothreads, int defaultLinger);
   ~ZmqContext();
   static ZmqContext *instance(int iothreads=4, int defaultLinger = 0) {
-    return self_ ? self_ : new ZmqContext(iothreads, defaultLinger);
+    if (!self_)
+        self_ = new ZmqContext(iothreads, defaultLinger);
+    return self_;
   }
 
   static int majorVersion();
