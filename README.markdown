@@ -1,6 +1,9 @@
 Zeromqt - a [Qt][] binding for [ZeroMQ][]
 =========================================
 
+(You may want to consiser using [nzmqt][] instead - it's a cleaner
+implementation and is based on newer versions of the underlying API)
+
 Zeromqt integrates ZeroMQ (version 2.1.0 and later) into the Qt event loop,
 mapping ZeroMQ message events onto Qt signals.
 
@@ -52,3 +55,4 @@ More Information
 
 [qt]:     http://qt.nokia.com/ "Qt"
 [zeromq]: http://zeromq.com/   "ZeroMQ"
+[nzmqt]:  https://github.com/jonnydee/nzmqt "nzmqt"
